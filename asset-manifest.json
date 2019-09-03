@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mythical_weapon/static/css/main.2cce8147.chunk.css",
+    "main.js": "/mythical_weapon/static/js/main.cf6719e1.chunk.js",
+    "main.js.map": "/mythical_weapon/static/js/main.cf6719e1.chunk.js.map",
+    "runtime~main.js": "/mythical_weapon/static/js/runtime~main.4befe034.js",
+    "runtime~main.js.map": "/mythical_weapon/static/js/runtime~main.4befe034.js.map",
+    "static/js/2.2b82bcc0.chunk.js": "/mythical_weapon/static/js/2.2b82bcc0.chunk.js",
+    "static/js/2.2b82bcc0.chunk.js.map": "/mythical_weapon/static/js/2.2b82bcc0.chunk.js.map",
+    "index.html": "/mythical_weapon/index.html",
+    "precache-manifest.f6812361fe136ee0009da80049fe8b2a.js": "/mythical_weapon/precache-manifest.f6812361fe136ee0009da80049fe8b2a.js",
+    "service-worker.js": "/mythical_weapon/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/mythical_weapon/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/mythical_weapon/static/media/logo.5d5d9eef.svg"
+  }
+}
