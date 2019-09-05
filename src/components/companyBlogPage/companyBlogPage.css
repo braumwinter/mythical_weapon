@@ -1,0 +1,102 @@
+#mainRem3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+#rem3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 29%;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  height: auto;
+}
+
+#eee3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 69%;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+#ulBlogList {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 20px 5px;
+}
+#ulBlogList li {
+  list-style-type: none;
+}
+
+.blogReview {
+  width: 100%;
+  padding: 15px;
+  margin: 15px;
+}
+.blogReview .blogImgDiv {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.blogReview .blogImgDiv .imgRi {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.blogReview .blogImgDiv .imgRi img {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+.blogReview .blogImgDiv .nameRi {
+  height: 100%;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+/*# sourceMappingURL=companyBlogPage.css.map */

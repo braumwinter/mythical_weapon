@@ -1,2 +1,2 @@
-let searchList = new Object();
+let searchList = {};
 export default searchList;

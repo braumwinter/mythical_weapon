@@ -1,2 +1,2 @@
-let basketList = new Object();
+let basketList = {};
 export default basketList;

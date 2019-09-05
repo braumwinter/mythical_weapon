@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";*/
 import {
     HOME_PAGE,
     AUTHORIZATION_PAGE,

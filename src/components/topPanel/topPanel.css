@@ -1,0 +1,253 @@
+/*colors*/
+/*var1 - green*/
+/*var2 - blue dark*/
+/*var3 - cold light*/
+/*var4 - cold dark*/
+/*var5 - warm light*/
+/*var5 - warm dark*/
+/*var6*/
+/*main setting*/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  color: #b5b5b5;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #161616;
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+img {
+  background-size: cover;
+}
+
+#container {
+  width: 94%;
+  height: auto;
+  margin: 0px auto;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #161616;
+}
+
+#mainContent {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+}
+
+.myButton {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid gray;
+  padding: 8px 15px;
+  margin: 10px 15px;
+  color: gray;
+}
+.myButton:hover {
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+}
+.myButton:active {
+  background-color: black;
+}
+
+.textIndent {
+  text-indent: 1rem;
+}
+
+#ner {
+  background-color: black;
+}
+
+aside {
+  z-index: 100600;
+}
+
+/*category*/
+.divCategory {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.divCatalog {
+  width: 29%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.categoryCatalog {
+  display: block;
+  width: 100%;
+}
+
+.divFormCost {
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.h1Filter {
+  text-align: center;
+  margin: 20px 0px;
+  text-decoration: underline;
+}
+
+.divMainCatalog {
+  width: 69%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.divFilter {
+  padding: 5px;
+  font-size: 1.5rem;
+}
+.divFilter input {
+  margin-left: 15px;
+}
+
+.ui.inverted.form .ui.checkbox label, .ui.inverted.form label {
+  font-size: 1.5rem;
+}
+
+.ui.image img {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 940px) {
+  .divCatalog {
+    width: 45%;
+  }
+
+  .divMainCatalog {
+    width: 54%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .divCatalog {
+    width: 100%;
+  }
+
+  .divMainCatalog {
+    width: 100%;
+  }
+
+  .categoryCatalog {
+    display: none;
+  }
+}
+#topPanel {
+  background-color: #242424;
+  width: 100%;
+  height: 50px;
+  padding: 0% 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#topPanel #loginDiv {
+  height: 100%;
+  padding: 0rem 1.5rem;
+}
+#topPanel #loginDiv #loginButton {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 0px;
+  background-color: transparent;
+}
+#topPanel #loginDiv:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#timeWork, #loginDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#timeWork2 {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  #timeWork2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 65%;
+  }
+
+  #timeWork {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=topPanel.css.map */

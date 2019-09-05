@@ -1,5 +1,5 @@
-const imgPath = '../../src/img/';
 import {IMG_PATH} from "../consts/constants";
+/*const imgPath = '../../src/img/';*/
 
 const productList = [
     {

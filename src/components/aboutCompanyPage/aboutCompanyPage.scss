@@ -1,0 +1,159 @@
+#mainRem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+#rem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 29%;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  height: auto;
+}
+
+#aboutCompany {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 69%;
+}
+
+.tyre {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 20px;
+
+  .tyre2 {
+    width: 100%;
+  }
+
+  p {
+    width: 100%;
+    text-align: justify;
+  }
+}
+
+.aboutCompanyList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  & li {
+    list-style-type: none;
+    display: block;
+  }
+}
+
+.cardRt {
+  display: inline-block;
+  width: 350px;
+  height: 400px;
+  margin: 10px 20px;
+  border: 1px solid #000000;
+  position: relative;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.cardFrontRt, .cardBackRt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+
+  & img {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+  }
+}
+
+.cardFrontRt {
+  background-color: transparent;
+}
+
+.cardBackRt {
+  background-color: transparent;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.cardRt:hover .cardFrontRt {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.cardRt:hover .cardBackRt {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.headerRt {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.textRt {
+  padding: 8px;
+  text-align: justify;
+}
+
+.spanDescription{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+
+  #rem {
+    display: none;
+  }
+
+  #aboutCompany {
+    width: 100%;
+  }
+}

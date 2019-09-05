@@ -1,0 +1,47 @@
+$sizeLogo: 200px;
+
+#Catalog {
+  width: 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .CatalogList {
+    display: block;
+    padding: 0px 5px;
+    margin: 0px 5px;
+
+    & li {
+      list-style-type: none;
+      border-bottom: 1px solid gray;
+      padding: 8px 8px 8px 0px;
+      margin: 5px;
+
+      &:hover {
+        cursor: pointer;
+        color: white;
+        border-bottom: 1px solid white;
+
+        & p {
+          color: white;
+        }
+      }
+
+      &:active {
+        background-color: black;
+      }
+
+      & p {
+        text-decoration: none;
+        color: gray;
+      }
+    }
+  }
+}

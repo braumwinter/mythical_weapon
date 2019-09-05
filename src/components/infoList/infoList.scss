@@ -1,0 +1,24 @@
+.showInfoAdditional {
+  display: block;
+}
+
+.noshowInfoAdditional {
+  display: none;
+}
+
+#BrAccordion {
+  margin: 2px;
+  padding: 20px;
+  text-align: justify;
+}
+
+.headerBrAccordion {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.ui.accordion .title:not(.ui) {
+  padding: 1.5rem 0;
+}

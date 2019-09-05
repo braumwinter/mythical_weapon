@@ -1,0 +1,41 @@
+#Catalog {
+  width: 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#Catalog .CatalogList {
+  display: block;
+  padding: 0px 5px;
+  margin: 0px 5px;
+}
+#Catalog .CatalogList li {
+  list-style-type: none;
+  border-bottom: 1px solid gray;
+  padding: 8px 8px 8px 0px;
+  margin: 5px;
+}
+#Catalog .CatalogList li:hover {
+  cursor: pointer;
+  color: white;
+  border-bottom: 1px solid white;
+}
+#Catalog .CatalogList li:hover p {
+  color: white;
+}
+#Catalog .CatalogList li:active {
+  background-color: black;
+}
+#Catalog .CatalogList li p {
+  text-decoration: none;
+  color: gray;
+}
+
+/*# sourceMappingURL=catalog.css.map */

@@ -1,0 +1,183 @@
+@import "../../../src/styles/App";
+
+.card{
+  display: inline-block;
+  width: 250px;
+  height: 400px;
+  margin: 10px 15px;
+  border: 1px solid black;
+  position: relative;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+
+  & h3{
+    display: block;
+  }
+}
+
+.flip{
+  width: 100%;
+  height: 200px;
+  display: block;
+  position: relative;
+}
+
+.cardFront, .cardBack{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.cardFront{
+  background-color: transparent;
+}
+
+.cardBack{
+  background-color: transparent;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  border: 1px solid black;
+}
+
+.card:hover .cardFront{
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card:hover .cardBack{
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.nowrap, .nostrike{
+  display: none;
+}
+
+.strike{
+  display: inline;
+  text-decoration: line-through;
+}
+
+.ribbon {
+  position: absolute;
+  top: -6.1px;
+  right: 10px;
+  z-index: 100500;
+}
+.ribbon:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: -9px;
+  border-left: 53px solid transparent;
+  border-right: 53px solid transparent;
+  border-top: 10px solid $buttonMainColor;
+}
+.ribbon span {
+  position: relative;
+  display: block;
+  text-align: center;
+  background: $buttonMainColor;
+  font-size: 14px;
+  line-height: 1;
+  padding: 12px 8px 10px;
+  border-top-right-radius: 8px;
+  width: 90px;
+}
+.ribbon span:before, .ribbon span:after {
+  position: absolute;
+  content: "";
+}
+.ribbon span:before {
+  height: 6px;
+  width: 6px;
+  left: -6px;
+  top: 0;
+  background: $buttonMainColor;
+}
+.ribbon span:after {
+  height: 6px;
+  width: 8px;
+  left: -8px;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+  background: $buttonLightColor;
+}
+
+.kek{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 25px 0px;
+
+}
+
+.ter{
+  display: inline-block;
+  margin-left: 7px;
+}
+
+
+.het{
+  display: block;
+  padding-left: 5px;
+}
+
+.yep{
+  display: block;
+  text-align: center;
+}
+
+.sert{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dem{
+  text-align: center;
+}
+
+.ratingCard{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}

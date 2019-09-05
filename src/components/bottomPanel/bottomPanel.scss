@@ -1,0 +1,197 @@
+@import "../../../src/styles/App";
+
+$sizeLogo: 200px;
+
+#bottomPanel {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: $menuColor;
+  padding: 0% 3%;
+
+  & #bottomMenu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    .bottomList {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 0px 20px;
+      margin: 0px 20px;
+
+      & li {
+        list-style-type: none;
+        border-bottom: 1px solid gray;
+        padding: 8px 15px;
+        margin: 10px 15px;
+
+        &:hover {
+          cursor: pointer;
+          border-bottom: 1px solid white;
+
+          & p {
+            color: white;
+          }
+        }
+
+        &:active {
+          background-color: black;
+        }
+
+        & p {
+          text-decoration: none;
+          color: gray;
+        }
+      }
+    }
+  }
+}
+
+.socialImg {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+}
+
+#bottomLink {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+}
+
+#bottomPhone {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  #emailDivBot, #phoneDivBot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+}
+
+#developer {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#socialLink {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  & li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 3px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+#socialLink2 {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  #socialLink2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    & li {
+      display: inline-block;
+      list-style-type: none;
+      margin: 3px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  #socialLink {
+    display: none;
+  }
+
+  #bottomLink {
+    justify-content: space-around;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  #bottomPhone {
+    width: 49%;
+  }
+  #developer {
+    width: 49%;
+  }
+}

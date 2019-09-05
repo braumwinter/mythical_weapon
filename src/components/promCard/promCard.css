@@ -1,0 +1,365 @@
+/*colors*/
+/*var1 - green*/
+/*var2 - blue dark*/
+/*var3 - cold light*/
+/*var4 - cold dark*/
+/*var5 - warm light*/
+/*var5 - warm dark*/
+/*var6*/
+/*main setting*/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  color: #b5b5b5;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #161616;
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+img {
+  background-size: cover;
+}
+
+#container {
+  width: 94%;
+  height: auto;
+  margin: 0px auto;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #161616;
+}
+
+#mainContent {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+}
+
+.myButton {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid gray;
+  padding: 8px 15px;
+  margin: 10px 15px;
+  color: gray;
+}
+.myButton:hover {
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+}
+.myButton:active {
+  background-color: black;
+}
+
+.textIndent {
+  text-indent: 1rem;
+}
+
+#ner {
+  background-color: black;
+}
+
+aside {
+  z-index: 100600;
+}
+
+/*category*/
+.divCategory {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.divCatalog {
+  width: 29%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.categoryCatalog {
+  display: block;
+  width: 100%;
+}
+
+.divFormCost {
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.h1Filter {
+  text-align: center;
+  margin: 20px 0px;
+  text-decoration: underline;
+}
+
+.divMainCatalog {
+  width: 69%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.divFilter {
+  padding: 5px;
+  font-size: 1.5rem;
+}
+.divFilter input {
+  margin-left: 15px;
+}
+
+.ui.inverted.form .ui.checkbox label, .ui.inverted.form label {
+  font-size: 1.5rem;
+}
+
+.ui.image img {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 940px) {
+  .divCatalog {
+    width: 45%;
+  }
+
+  .divMainCatalog {
+    width: 54%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .divCatalog {
+    width: 100%;
+  }
+
+  .divMainCatalog {
+    width: 100%;
+  }
+
+  .categoryCatalog {
+    display: none;
+  }
+}
+.card1 {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  border: 1px solid black;
+  position: relative;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+.card1 h3 {
+  text-align: left;
+}
+
+.flip1 {
+  width: 100%;
+  height: 200px;
+  display: block;
+  position: relative;
+}
+
+.cardFront1, .cardBack1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.cardFront1 img, .cardBack1 img {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+.cardFront1 {
+  background-color: transparent;
+}
+
+.cardBack1 {
+  background-color: transparent;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card1:hover .cardFront1 {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card1:hover .cardBack1 {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.nowrap1, .nostrike1 {
+  text-decoration: line-through;
+  background-color: #717171;
+}
+
+.strike1 {
+  text-decoration: line-through;
+}
+
+.ribbon1 {
+  position: absolute;
+  top: -6.1px;
+  right: 10px;
+  z-index: 100500;
+}
+
+.ribbon1:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: -9px;
+  border-left: 53px solid transparent;
+  border-right: 53px solid transparent;
+  border-top: 10px solid #4b0b31;
+}
+
+.ribbon1 span {
+  position: relative;
+  display: block;
+  text-align: center;
+  background: #4b0b31;
+  font-size: 14px;
+  line-height: 1;
+  padding: 12px 8px 10px;
+  border-top-right-radius: 8px;
+  width: 90px;
+}
+
+.ribbon1 span:before, .ribbon1 span:after {
+  position: absolute;
+  content: "";
+}
+
+.ribbon1 span:before {
+  height: 6px;
+  width: 6px;
+  left: -6px;
+  top: 0;
+  background: #4b0b31;
+}
+
+.ribbon1 span:after {
+  height: 6px;
+  width: 8px;
+  left: -8px;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+  background: #69344f;
+}
+
+#hz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.costs1 {
+  display: block;
+}
+
+.nocosts1 {
+  display: none;
+}
+
+.showProdInfo {
+  display: block;
+}
+
+.noshowProdInfo {
+  display: none;
+}
+
+.showManufInfo {
+  display: block;
+}
+
+.noshowManufInfo {
+  display: none;
+}
+
+.ui.modal > .content {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 10px 20px 10px 10px;
+}
+
+.ui.modal > .content > .image {
+  margin: 15px auto;
+}
+
+/*# sourceMappingURL=promCard.css.map */

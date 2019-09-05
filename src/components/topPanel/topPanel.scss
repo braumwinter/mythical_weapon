@@ -1,0 +1,65 @@
+@import "../../../src/styles/App";
+
+#topPanel {
+  background-color: $menuColor;
+  width: 100%;
+  height: 50px;
+  padding: 0% 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  & #loginDiv {
+    height: 100%;
+    padding: 0rem 1.5rem;
+
+    & #loginButton {
+      width: 100%;
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+      color: white;
+      display: inline-block;
+      text-decoration: none;
+      outline: none;
+      border: none;
+      border-radius: 0px;
+      background-color: transparent;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+#timeWork, #loginDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#timeWork2 {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  #timeWork2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 65%;
+  }
+
+  #timeWork {
+    display: none;
+  }
+}

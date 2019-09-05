@@ -1,0 +1,82 @@
+.basketPhotoDiv {
+  display: block;
+  width: 100px;
+  height: auto;
+  overflow: hidden;
+
+  & img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+  }
+
+  img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+#basketDiv {
+  display: block;
+  width: 100%;
+  padding: 20px;
+}
+
+#basketTableDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+#totalBasket, #totalBasket2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 25px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+#nummr {
+  margin: 0px auto;
+  /*margin-right: 0px;*/
+}
+
+#totalCostBasket{
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 8px 15px;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 663px){
+  .basketPhotoDiv{
+    display: none;
+  }
+
+  .tert{
+    display: none;
+  }
+
+  .tert2{
+    word-wrap: break-word;
+  }
+
+  #basketTableDiv{
+    overflow-x: auto;
+  }
+}

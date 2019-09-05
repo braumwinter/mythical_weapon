@@ -1,0 +1,20 @@
+#authorizationForm {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1040px) {
+  #authorizationForm {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 750px) {
+  #authorizationForm {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=authorizationPage.css.map */

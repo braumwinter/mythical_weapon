@@ -1,0 +1,193 @@
+$sizeLogo: 200px;
+
+#mainMenu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+}
+
+.MenuList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+  margin: 0px 10px;
+
+  & li {
+    list-style-type: none;
+    border: 1px solid gray;
+    padding: 8px 15px;
+    margin: 10px 15px;
+
+    &:hover {
+      background-color: gray;
+      cursor: pointer;
+      color: white;
+    }
+
+    &:active {
+      background-color: black;
+    }
+
+    & a {
+      text-decoration: none;
+      color: gray;
+    }
+  }
+}
+
+.MenuList2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+  margin: 0px 10px;
+
+  & li {
+    list-style-type: none;
+    display: block;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 8px 15px;
+    margin: 10px 15px;
+
+    &:hover {
+      background-color: gray;
+      cursor: pointer;
+      color: white;
+    }
+
+    &:active {
+      background-color: black;
+    }
+
+    & a {
+      text-decoration: none;
+      color: gray;
+    }
+  }
+}
+
+#navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+}
+
+#showHorizontal {
+  display: block;
+}
+
+#noshowHorizontal {
+  display: none;
+}
+
+#showVertical {
+  display: block;
+}
+
+#noshowVertical {
+  display: none;
+}
+
+#horizontalHamburgerDiv {
+  display: none;
+}
+
+#verticalHamburgerDiv {
+  display: none;
+}
+
+#verticalHamburgerImg {
+  width: 30px;
+  height: 30px;
+}
+
+#horizontalHamburgerImg {
+  width: 30px;
+  height: 30px;
+}
+
+#mainMenuList {
+  display: block;
+}
+
+#mmm {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1040px) {
+  #horizontalHamburgerDiv {
+    display: inline-block;
+    width: 30px;
+  }
+
+  #verticalHamburgerDiv {
+    display: none;
+  }
+
+  #mainMenuList {
+    display: none;
+  }
+
+  #navBar {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #verticalHamburgerDiv {
+    display: inline-block;
+    width: 30px;
+  }
+
+  #horizontalHamburgerDiv {
+    display: none;
+  }
+
+  #mainMenuList {
+    display: none;
+  }
+
+  #navBar {
+    width: 30px;
+  }
+}

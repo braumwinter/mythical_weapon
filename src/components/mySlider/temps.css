@@ -1,0 +1,17 @@
+.temps {
+  display: block;
+  text-align: center;
+}
+
+.center-img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 670px) {
+  .center-img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=temps.css.map */
