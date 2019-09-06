@@ -1,6 +1,4 @@
 import {
-    SET_PERSON_INFO,
-    IS_LOGIN_FALSE,
     IS_LOGIN_TRUE
 } from "../consts/constants";
 

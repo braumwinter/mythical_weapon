@@ -48,34 +48,34 @@ class SpellPage extends Component {
     }
 
     showEarthFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {} = event.target;*/
         this.state.isEarth === true ? this.setState({isEarth: false}) : this.setState({isEarth: true})
     }
 
     showWaterFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {} = event.target;*/
         this.state.isWater === true ? this.setState({isWater: false}) : this.setState({isWater: true})
     }
 
     showFireFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {} = event.target;*/
         this.state.isFire === true ? this.setState({isFire: false}) : this.setState({isFire: true})
     }
 
     showAirFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {} = event.target;*/
         this.state.isAir === true ? this.setState({isAir: false}) : this.setState({isAir: true})
     }
 
     changeMinSpell(event) {
-        const {name, value} = event.target;
+        const {value} = event.target;
         this.setState({
             minValueSpell: value
         })
     }
 
     changeMaxSpell(event) {
-        const {name, value} = event.target;
+        const {value} = event.target;
         this.setState({
             maxValueSpell: value
         })
@@ -144,6 +144,7 @@ class SpellPage extends Component {
                     </div>
                 </div>
                 <div className="divMainCatalog">
+                    {/* eslint-disable-next-line array-callback-return */}
                     {spellArr.map(obj => {
                         if (+obj.cost >= +this.state.minValueSpell && +obj.cost <= +this.state.maxValueSpell) {
                             if (this.state.isEarth && !this.state.isWater && !this.state.isFire && !this.state.isAir) {

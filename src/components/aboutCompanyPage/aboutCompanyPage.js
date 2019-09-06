@@ -4,9 +4,9 @@ import './aboutCompanyPage.scss';
 import '../../script/manufacturer';
 import manufacturerList from "../../script/manufacturer";
 import Catalog from '../catalog/catalog';
-import {BLACK_COLOR, WHITE_COLOR} from "../../../src/consts/constants";
+import {BLACK_COLOR} from "../../../src/consts/constants";
 import "../../../src/styles/App.scss";
-import favoritesList from "../../script/favoritesList";
+/*import favoritesList from "../../script/favoritesList";*/
 import manufacturerFavor from "../../script/manufacturerFavor";
 
 function Size(obj) {

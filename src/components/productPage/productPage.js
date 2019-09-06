@@ -73,7 +73,7 @@ class ProductPage extends Component {
     }
 
     removeQuantity() {
-        if (this.state.quantity == 1 || this.state.quantity == 0) {
+        if (this.state.quantity === 1 || this.state.quantity === 0) {
             this.setState({
                 quantity: 1
             })
@@ -120,7 +120,7 @@ class ProductPage extends Component {
     render() {
         prodArr = productList.filter(productList => productList.id === this.props.data.rdShowWindow.idProduct);
         manufArr = manufacturerList.filter(manufacturerList => manufacturerList.specialization.indexOf(prodArr[0].classArtifact, 0) !== -1);
-        blogArr = blogList.filter(blogList => blogList.idProduct == this.props.data.rdShowWindow.idProduct);
+        blogArr = blogList.filter(blogList => blogList.idProduct === this.props.data.rdShowWindow.idProduct);
 
         function temp() {
             if (prodArr[0].classArtifact === "Weapon") {

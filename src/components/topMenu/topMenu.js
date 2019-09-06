@@ -28,7 +28,7 @@ class TopMenu extends Component {
             <div id="topMenu">
                 <div id="logoDiv">
                     {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-                    <Link to="/"><img id="logo" alt="logo image" src="../../../src/img/logo.png"/></Link>
+                    <Link to="/"><img id="logo" alt="logo image" src={require("../../../src/img/logo.png")}/></Link>
                 </div>
                 <div id="contactDiv">
                     <div id="emailDiv">

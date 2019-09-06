@@ -1,5 +1,3 @@
-
-export const SET_PERSON_INFO = "SET_PERSON_INFO";
 export const IS_LOGIN_TRUE = "IS_LOGIN_TRUE";
 export const IS_LOGIN_FALSE = "IS_LOGIN_FALSE";
 

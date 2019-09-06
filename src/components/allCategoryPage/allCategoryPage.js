@@ -37,29 +37,29 @@ class AllCategoryPage extends Component {
     }
 
     showWeaponFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {} = event.target;*/
         this.state.isWeapon === true ? this.setState({isWeapon: false}) : this.setState({isWeapon: true})
     }
 
     showArmorFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {} = event.target;*/
         this.state.isArmor === true ? this.setState({isArmor: false}) : this.setState({isArmor: true})
     }
 
     showSpellFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {} = event.target;*/
         this.state.isSpell === true ? this.setState({isSpell: false}) : this.setState({isSpell: true})
     }
 
     changeMin(event) {
-        const {name, value} = event.target;
+        const {value} = event.target;
         this.setState({
             minValue: value
         })
     }
 
     changeMax(event) {
-        const {name, value} = event.target;
+        const {value} = event.target;
         this.setState({
             maxValue: value
         })

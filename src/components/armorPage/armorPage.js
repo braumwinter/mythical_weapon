@@ -53,49 +53,49 @@ class ArmorPage extends Component {
     }
 
     showTorsoFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {name, value, type, checked} = event.target;*/
         this.state.isTorso === true ? this.setState({isTorso: false}) : this.setState({isTorso: true})
     }
 
     showHelmetFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {name, value, type, checked} = event.target;*/
         this.state.isHelmet === true ? this.setState({isHelmet: false}) : this.setState({isHelmet: true})
     }
 
     showLeggingsFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {name, value, type, checked} = event.target;*/
         this.state.isLeggings === true ? this.setState({isLeggings: false}) : this.setState({isLeggings: true})
     }
 
     showGlovesFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {name, value, type, checked} = event.target;*/
         this.state.isGloves === true ? this.setState({isGloves: false}) : this.setState({isGloves: true})
     }
 
     showShieldFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {name, value, type, checked} = event.target;*/
         this.state.isShield === true ? this.setState({isShield: false}) : this.setState({isShield: true})
     }
 
     showBeltFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {name, value, type, checked} = event.target;*/
         this.state.isBelt === true ? this.setState({isBelt: false}) : this.setState({isBelt: true})
     }
 
     showFootwearFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {name, value, type, checked} = event.target;*/
         this.state.isFootwear === true ? this.setState({isFootwear: false}) : this.setState({isFootwear: true})
     }
 
     changeMinArmor(event) {
-        const {name, value} = event.target;
+        const {value} = event.target;
         this.setState({
             minValueArmor: value
         })
     }
 
     changeMaxArmor(event) {
-        const {name, value} = event.target;
+        const {value} = event.target;
         this.setState({
             maxValueArmor: value
         })
@@ -182,6 +182,7 @@ class ArmorPage extends Component {
                     </div>
                 </div>
                 <div className="divMainCatalog">
+                    {/* eslint-disable-next-line array-callback-return */}
                     {armorArr.map(obj => {
                         if (+obj.cost >= +this.state.minValueArmor && +obj.cost <= +this.state.maxValueArmor) {
                             if (this.state.isTorso && !this.state.isHelmet && !this.state.isLeggings && !this.state.isGloves &&

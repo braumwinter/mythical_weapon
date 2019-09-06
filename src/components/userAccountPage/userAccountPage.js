@@ -123,7 +123,6 @@ class UserAccountPage extends Component {
     render() {
         const {activeIndex} = this.state;
         let size = Size(basketList);
-        console.log("size ", size);
 
         return (
             <div>

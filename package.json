@@ -15,7 +15,10 @@
     "react-scroll-up-button": "^1.6.4",
     "react-slick": "^0.25.2",
     "redux": "^4.0.4",
-    "semantic-ui-react": "^0.88.0"
+    "semantic-ui-react": "^0.88.0",
+    "slick-carousel": "^1.8.1",
+    "html-webpack-plugin": "latest",
+    "mini-css-extract-plugin": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "file-loader": "^4.2.0",
+    "url-loader": "^2.1.0"
   }
 }

@@ -1,5 +1,4 @@
 import {
-    COLOR,
     BLACK_COLOR,
     WHITE_COLOR
 } from "../consts/constants";

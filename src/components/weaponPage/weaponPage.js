@@ -49,34 +49,34 @@ class WeaponPage extends Component {
     }
 
     showSwordFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {name, value, type, checked} = event.target;*/
         this.state.isSword === true ? this.setState({isSword: false}) : this.setState({isSword: true})
     }
 
     showSpearFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {name, value, type, checked} = event.target;*/
         this.state.isSpear === true ? this.setState({isSpear: false}) : this.setState({isSpear: true})
     }
 
     showTridentFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {name, value, type, checked} = event.target;*/
         this.state.isTrident === true ? this.setState({isTrident: false}) : this.setState({isTrident: true})
     }
 
     showHammerFilter(event) {
-        const {name, value, type, checked} = event.target;
+        /*const {name, value, type, checked} = event.target;*/
         this.state.isHammer === true ? this.setState({isHammer: false}) : this.setState({isHammer: true})
     }
 
     changeMinWeapon(event) {
-        const {name, value} = event.target;
+        const {value} = event.target;
         this.setState({
             minValueWeapon: value
         })
     }
 
     changeMaxWeapon(event) {
-        const {name, value} = event.target;
+        const {value} = event.target;
         this.setState({
             maxValueWeapon: value
         })
@@ -145,6 +145,7 @@ class WeaponPage extends Component {
                     </div>
                 </div>
                 <div className="divMainCatalog">
+                    {/* eslint-disable-next-line array-callback-return */}
                     {weaponArr.map(obj => {
                         if (+obj.cost >= +this.state.minValueWeapon && +obj.cost <= +this.state.maxValueWeapon) {
                             if (this.state.isSword && !this.state.isSpear && !this.state.isTrident && !this.state.isHammer) {
