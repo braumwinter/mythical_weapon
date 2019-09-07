@@ -34,13 +34,13 @@ export default class SimpleSlider extends Component {
             <div>
                 <Slider {...settings}>
                     <div className="temps">
-                        <img className="center-img" alt="Glamdring" src={this.props.Slide_1}/>
+                        <img className="center-img" alt="Glamdring" src={require("../../../src/img/Glamdring.png")}/>
                     </div>
                     <div className="temps">
                         <img className="center-img" alt="KarrBelaigDurgin" src={require("../../../src/img/KarrBelaigDurgin.png")}/>
                     </div>
                     <div className="temps">
-                        <img className="center-img" alt="SwordKladenets" src={this.props.Slide_3}/>
+                        <img className="center-img" alt="SwordKladenets" src={require("../../../src/img/SwordKladenets.png")}/>
                     </div>
                 </Slider>
             </div>
