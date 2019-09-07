@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mythical_weapon/precache-manifest.f6812361fe136ee0009da80049fe8b2a.js"
+  "/mythical_weapon/precache-manifest.97c3b0e490e286f5b0e535ae604d9c70.js"
 );
 
 self.addEventListener('message', (event) => {
