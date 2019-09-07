@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4ba86d4cff8cdf284e722cb06899d371",
+    "revision": "3adc31e9e4de9920164e5c9ac94c8e4b",
     "url": "/mythical_weapon/index.html"
   },
   {
-    "revision": "c14fa8d4930af5e7f281",
-    "url": "/mythical_weapon/static/css/main.d03d2fe3.chunk.css"
+    "revision": "45b90ca7ab1ab2826d57",
+    "url": "/mythical_weapon/static/css/main.e71e7ac3.chunk.css"
   },
   {
-    "revision": "74955e4002a14b2fea17",
-    "url": "/mythical_weapon/static/js/2.3beedb66.chunk.js"
+    "revision": "4e403cb134f386a0e11c",
+    "url": "/mythical_weapon/static/js/2.61d7e9f3.chunk.js"
   },
   {
-    "revision": "c14fa8d4930af5e7f281",
-    "url": "/mythical_weapon/static/js/main.05d115ed.chunk.js"
+    "revision": "45b90ca7ab1ab2826d57",
+    "url": "/mythical_weapon/static/js/main.e03e6d18.chunk.js"
   },
   {
     "revision": "04135ad4902f39b1a444",
