@@ -63,7 +63,7 @@ function App() {
                     <div id="mainContent">
                         <Switch>
                             <Route exact path="/" component={HomePage}/>
-                            <Route path="/mythical_weapon/" component={HomePage}/>
+                            <Route path="braumwinter.github.io/mythical_weapon/" component={HomePage}/>
                             <Route path="/Authorization" component={AuthorizationPage}/>
                             <Route path="/Registration" component={RegistrationPage}/>
                             <Route path="/UserAccount" component={UserAccountPage}/>
