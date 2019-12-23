@@ -1,1 +1,1 @@
-[mythical_weapon](https://braumwinter.github.io/mythical_weapon)
+[mythical_weapon](https://braumwinter.github.io/mythical_weapon) - click on the logo!
